@@ -19,10 +19,10 @@
 
 namespace anbox::graphics {
 DensityType current_density() {
-  return DensityType::medium;
+  return DensityType::low;
 }
 
 int dp_to_pixel(unsigned int dp) {
-  return dp * static_cast<unsigned int>(current_density()) / static_cast<unsigned int>(DensityType::medium);
+  return dp * static_cast<unsigned int>(current_density()) / static_cast<unsigned int>(DensityType::low);
 }
 }
